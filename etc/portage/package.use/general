@@ -1,0 +1,53 @@
+# NOT USED
+# media-video/mpv bluray dvd jack javascript jpeg libcaca openal pipewire rubberband tools vaapi vdpau vulkan
+
+# --------------
+
+# persist permission elevation
+app-admin/doas persist
+
+# required by app-portage/pfl-3.2-r2::gentoo[network-cron]
+# required by app-portage/pfl (argument)
+>=sys-apps/util-linux-2.38.1-r2 caps
+
+# LaTeX things
+app-text/texlive context extra graphics humanities luatex png pstricks science truetype xml
+app-text/texlive-core xetex
+
+# required by app-text/zathura-pdf-poppler-0.3.1::gentoo
+# required by app-text/zathura-pdf-poppler (argument)
+>=app-text/poppler-23.03.0 cairo
+media-gfx/imagemagick djvu fftw fontconfig hdri heif jbig jpeg jpeg2k lzma opencl raw atic-libs svg tiff truetype webp xml zip
+
+# ImageMagick things
+# required by media-gfx/imagemagick-7.1.1.6::gentoo[heif]
+# required by media-gfx/imagemagick (argument)
+>=media-libs/libheif-1.13.0 x265
+media-libs/imlib2 eps heif jpeg2k svg
+media-gfx/sxiv exif gif webp
+
+# R things
+dev-lang/R cairo doc jpeg perl png tiff
+# required by dev-lang/R-4.2.3::gentoo
+# required by dev-lang/R (argument)
+>=sys-libs/zlib-1.2.13-r1 minizip
+
+# Rust things
+dev-lang/rust-bin clippy rust-analyzer rustfmt doc rust-src
+
+# FFMPEG things
+media-video/ffmpeg alsa bluray cdio doc fdk flite fontconfig gme gsm jack jpeg2k kvazaar ladspa libaom libass libcaca libdrm librtmp libtesseract libv4l libxml2 lzma mp3 openal opencl opengl openh264 openssl opus oss pulseaudio rav1e rubberband samba sdl sndio speex ssh svg svt-av1 truetype v4l vaapi vdpau vidstab vorbis vpx vulkan webp x264 x265 xvid
+# required by media-video/ffmpeg-4.4.3::gentoo[samba]
+# required by media-video/ffmpeg (argument)
+
+>=net-fs/samba-4.16.9 client
+# required by media-sound/pulseaudio-daemon-16.1-r7::gentoo[alsa,alsa-plugin]
+# required by media-libs/libpulse-16.1-r2::gentoo
+# required by media-sound/pulseaudio-16.1::gentoo
+# required by media-video/ffmpeg-4.4.3::gentoo[pulseaudio]
+# required by media-video/ffmpeg (argument)
+>=media-plugins/alsa-plugins-1.2.7.1-r1 pulseaudio
+
+# required by dev-python/weasyprint-60.2::gentoo
+# required by weasyprint (argument)
+>=dev-python/pillow-10.2.0 jpeg2k
