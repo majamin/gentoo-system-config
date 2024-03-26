@@ -2,6 +2,7 @@ app-admin/doas
 app-admin/stow
 app-admin/sysklogd
 app-editors/neovim
+app-eselect/eselect-repository
 app-misc/tmux
 app-portage/cpuid2cpuflags
 app-portage/gentoolkit
@@ -45,5 +46,6 @@ sys-apps/ripgrep
 sys-auth/rtkit
 x11-apps/mesa-progs
 x11-drivers/xf86-video-intel
+x11-libs/libXinerama
 x11-misc/xclip
 x11-misc/xsel
