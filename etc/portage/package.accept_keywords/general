@@ -4,3 +4,6 @@ dev-haskell/*
 # Only needed if using ::haskell, but harmless if not.
 # May as well put it in, just in case for future use.
 */*::haskell
+
+# For backups
+app-backup/mkstage4

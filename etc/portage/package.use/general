@@ -51,3 +51,11 @@ media-video/ffmpeg alsa bluray cdio doc fdk flite fontconfig gme gsm jack jpeg2k
 # required by dev-python/weasyprint-60.2::gentoo
 # required by weasyprint (argument)
 >=dev-python/pillow-10.2.0 jpeg2k
+
+# Haskell things
+app-portage/layman sync-plugin-portage git
+dev-haskell/* doc hoogle hscolour
+dev-haskell/hoogle fetchdb fetchdb-ghc localdb
+
+# mesa
+media-libs/mesa vaapi vulkan-overlay
