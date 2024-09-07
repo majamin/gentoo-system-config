@@ -25,6 +25,10 @@ media-gfx/imagemagick djvu fftw fontconfig hdri heif jbig jpeg jpeg2k lzma openc
 >=media-libs/libheif-1.13.0 x265
 media-libs/imlib2 eps heif jpeg2k svg
 media-gfx/sxiv exif gif webp
+media-gfx/graphicsmagick debug dynamic-loading fpx heif jbig jpeg2k jpegxl lzma perl postscript q16 q32 verify-sig webp wmf zstd
+
+# TODO: this is require by pango, what requires pango?
+media-libs/freetype harfbuzz svg utils
 
 # R things
 dev-lang/R cairo doc jpeg perl png tiff
@@ -58,4 +62,22 @@ dev-haskell/* doc hoogle hscolour
 dev-haskell/hoogle fetchdb fetchdb-ghc localdb
 
 # mesa
-media-libs/mesa vaapi vulkan-overlay
+media-libs/mesa vaapi vulkan-overlay llvm llvm_slot_18
+# required by media-gfx/graphviz-9.0.0::gentoo
+# required by media-gfx/graphviz (argument)
+>=media-libs/gd-2.3.3-r4 fontconfig
+
+# For Love2D development, using Fennel
+dev-lang/fennel LUA_SINGLE_TARGET: lua5-4
+# required by virtual/httpd-php-8.2::gentoo
+# required by dev-db/phpmyadmin-5.2.1::gentoo
+# required by dev-db/phpmyadmin (argument)
+>=dev-lang/php-8.2.20 mysqli fpm
+# required by dev-lang/php-8.2.20::gentoo
+# required by virtual/httpd-php-8.2::gentoo
+# required by dev-db/phpmyadmin-5.2.1::gentoo
+# required by dev-db/phpmyadmin (argument)
+>=app-eselect/eselect-php-0.9.9 fpm
+
+# nmap things
+net-analyzer/nmap libssh2 ncat ndiff nping symlink verify-sig zenmap
