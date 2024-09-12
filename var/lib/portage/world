@@ -1,10 +1,7 @@
 app-admin/doas
+app-admin/pass
 app-admin/stow
 app-admin/sysklogd
-app-backup/mkstage4
-app-containers/docker
-app-containers/docker-compose
-app-containers/docker-compose:0
 app-editors/neovim
 app-eselect/eselect-repository
 app-misc/tmux
@@ -23,13 +20,11 @@ app-text/texlive-core
 app-text/tree
 app-text/zathura
 app-text/zathura-pdf-poppler
-dev-haskell/haskell-language-server
 dev-lang/R
 dev-lang/ghc
 dev-python/pynvim
 dev-python/secretstorage
 dev-python/weasyprint
-dev-ruby/asciidoctor
 dev-util/tree-sitter-cli
 dev-vcs/git
 games-misc/cowsay
@@ -53,8 +48,8 @@ sys-apps/ripgrep
 sys-apps/usbutils
 sys-auth/rtkit
 sys-fs/ncdu
+sys-process/cronie
 x11-apps/mesa-progs
-x11-drivers/xf86-video-intel
 x11-libs/libXinerama
 x11-misc/xclip
 x11-misc/xsel
